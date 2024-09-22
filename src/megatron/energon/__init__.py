@@ -30,7 +30,9 @@ from megatron.energon.flavors import (
     VQASample,
     VQAWebdataset,
     VidQASample,
-    VidQAWebdataset
+    VidQAWebdataset,
+    AudioQASample,
+    AudioQAWebdataset,
 )
 from megatron.energon.loader import get_loader, get_savable_loader
 from megatron.energon.metadataset import (
@@ -130,6 +132,8 @@ __all__ = [
     "VQAOCRWebdataset",
     "VidQASample",
     "VidQAWebdataset",
+    "AudioQASample",
+    "AudioQAWebdataset",
     "WorkerConfig",
     "basic_sample_keys",
     "batch_list",
