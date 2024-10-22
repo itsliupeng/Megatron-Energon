@@ -11,15 +11,16 @@ from megatron.energon.flavors.base_webdataset import DefaultGenericWebdataset
 
 
 @dataclass
-class AudioQASample(Sample):
+class AudioAsrSample(Sample):
     """Sample type for visual question answering."""
     mel: Optional[torch.Tensor] = None
     length: Optional[int] = None
-    codec_label: Optional[torch.Tensor] = None
-    question: Optional[str] = None
-    answer: Optional[str] = None
+    text: Optional[str] = None
 
 
-class AudioQAWebdataset(DefaultGenericWebdataset[AudioQASample]):
-    __sample_type__ = AudioQASample
+class AudioAsrWebdataset(DefaultGenericWebdataset[AudioAsrSample]):
+    __sample_type__ = AudioAsrSample
+
+
 ########################################################################################
+
