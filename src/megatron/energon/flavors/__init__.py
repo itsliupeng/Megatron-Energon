@@ -28,6 +28,7 @@ from megatron.energon.flavors.vqa import VQASample, VQAWebdataset
 from megatron.energon.flavors.vqa_and_ocr import VQAOCRWebdataset
 from megatron.energon.flavors.audio_qa import AudioQASample, AudioQAWebdataset 
 from megatron.energon.flavors.audio_asr import AudioAsrSample, AudioAsrWebdataset 
+from megatron.energon.flavors.audio_tts import AudioTtsSample, AudioTtsWebdataset 
 
 __all__ = [
     "BaseCoreDataset",
@@ -63,4 +64,6 @@ __all__ = [
     "AudioQAWebdataset",
     "AudioAsrSample"
     "AudioAsrWebdataset,"
+    "AudioTtsSample",
+    "AudioTtsWebdataset"
 ]

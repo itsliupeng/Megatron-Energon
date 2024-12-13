@@ -34,7 +34,9 @@ from megatron.energon.flavors import (
     AudioQASample,
     AudioQAWebdataset,
     AudioAsrSample,
-    AudioAsrWebdataset
+    AudioAsrWebdataset,
+    AudioTtsSample,
+    AudioTtsWebdataset
 )
 from megatron.energon.loader import get_loader, get_savable_loader
 from megatron.energon.metadataset import (

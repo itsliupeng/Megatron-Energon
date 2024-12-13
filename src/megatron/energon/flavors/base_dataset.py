@@ -262,7 +262,7 @@ class SavableDataset(IterableDataset[T_sample], Generic[T_sample], ABC):
     def verify_worker_config(self, worker_config: WorkerConfig) -> None:
         """Verify that the worker config is compatible with the dataset."""
         if hasattr(self, "worker_config"):
-            assert self.worker_config == worker_config, "Worker config is not consistent."
+            assert self.worker_config == worker_config, f"Worker config is not consistent. \n {self.worker_config} \n vs \n {worker_config}"
 
     @staticmethod
     def _function_config(fn: Callable) -> str:
